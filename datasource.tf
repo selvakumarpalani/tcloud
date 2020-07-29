@@ -3,6 +3,7 @@
 resource "aws_instance" "myec2" {
    ami = "ami-0a58e22c727337c51"
    instance_type = lookup(var.instance_type,terraform.workspace)
+   region = "ap-southeast-2"
 }
 
 variable "instance_type" {
