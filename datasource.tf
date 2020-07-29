@@ -5,3 +5,4 @@ resource "aws_eip" "lb" {
 output "eip" {
   value = aws_eip.lb
 }
+
